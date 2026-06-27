@@ -6,10 +6,10 @@ function getDapurLed() {
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
             leddapur.style.backgroundColor = "#0c55b4";
-            dapurledimage.src="./assets/torch.png";
+            dapurledimage.src="./torch.png";
         }else {
             leddapur.style.backgroundColor = "#96bff5";
-            dapurledimage.src="./assets/torch (1).png";
+            dapurledimage.src="./torch (1).png";
         }
     });
 }
@@ -20,10 +20,10 @@ function getKamarLed() {
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
             ledkamar.style.backgroundColor = "#0c55b4";
-            kamarledimage.src="./assets/torch.png";
+            kamarledimage.src="./torch.png";
         }else {
             ledkamar.style.backgroundColor = "#96bff5";
-            kamarledimage.src="./assets/torch (1).png";
+            kamarledimage.src="./torch (1).png";
         }
     });
 }
@@ -34,10 +34,10 @@ function getRuangMakanLed() {
     }).then(response => response.text()).then(result => {
         if(result == "ON") {
             ledruangmakan.style.backgroundColor = "#0c55b4";
-            ruangmakanledimage.src="./assets/torch.png";
+            ruangmakanledimage.src="./torch.png";
         }else {
             ledruangmakan.style.backgroundColor = "#96bff5";
-            ruangmakanledimage.src="./assets/torch (1).png";
+            ruangmakanledimage.src="./torch (1).png";
         }
     });
 }
