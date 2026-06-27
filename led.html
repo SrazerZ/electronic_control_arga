@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED CONTROL</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="layout">
+        <section class="navbar">
+            <h3>Aplikasi IoT</h3>
+        </section>
+        <section class="page-title">
+            <h3>Led Control</h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src="/assets/torch (1).png" class="led-image" id="dapurledimage">
+                <p class="led-text">Dapur</p>
+                <button class="item-submit" id="leddapur" onclick="setDapurLed()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src="/assets/torch (1).png" class="led-image" id="garasiledimage">
+                <p class="led-text">Garasi</p>
+                <button class="item-submit" id="ledgarasi" onclick="setGarasiLed()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src="/assets/torch (1).png" class="led-image" id="kamarledimage">
+                <p class="led-text">Kamar</p>
+                <button class="item-submit" id="ledkamar" onclick="setKamarLed()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src="/assets/torch (1).png" class="led-image" id="ruangmakanledimage">
+                <p class="led-text">Ruang Makan</p>
+                <button class="item-submit" id="ledruangmakan" onclick="setRuangMakanLed()">TURN ON</button>
+            </div>
+        </section>
+        <section class="bottombar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-home"></i></a></li>
+                <li><a href="led.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-fan"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </section>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

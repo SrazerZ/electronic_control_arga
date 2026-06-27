@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pliant', Arial, Helvetica, sans-serif;
+}
+
+html, body, * {
+    cursor: url('assets/cursor.png') 0 0, auto;
+}
+
+.layout {
+    max-width: 476px;
+    background-color: rgba(255, 255, 255, 0.425);
+    margin: 0 auto;
+    height: 100vh;
+    border: 1px solid black;
+    position: relative;
+}
+
+.navbar {
+    background-color: rgb(87, 151, 235);
+    height: 64px;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    height: calc(100vh - 120px);
+    overflow-y: scroll; 
+    padding: 32px;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 1px rgb(158, 158, 158);
+    align-items: center;
+}
+
+.item-image {
+    width: 50%;
+}
+
+.item-submit {
+    background-color: #96bff5;
+    color: white;
+    width: 100%;
+    padding: 4px 8px;
+    font-weight: bolder;
+    border: none;
+    font-size: 18px;
+}
+
+.page-title {
+    padding: 26px;
+}
+
+.page-title h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #5797eb ;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.leds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    background-color: black 1px;
+}
+
+.led {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px rgb(199, 199, 199);
+    padding: 16px 8px 8px;
+}
+
+.led-image {
+    width: 140px;
+    object-fit: cover;
+}
+
+.led-text {
+    font-weight: 400;
+    color: #5797eb;
+}
+
+.bottombar {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(87, 151, 235);
+    width: 100%;
+    text-decoration: none;
+}
+
+.bottombar ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    padding: 16px;
+}
+
+.bottombar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.bottombar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    display: block;
+}
+
+.bottombar ul li a:hover {
+    scale: 130%;
+    transition: all .3s ease-in-out;
+}
+
